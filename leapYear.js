@@ -4,9 +4,9 @@ function isLeap(year) {
         
         //Write your code here.
         var answer;
-        if (year % 4 == 0)
+        if (year % 4 === 0)
         {
-            if ((year % 100 == 0)&& (!(year % 400 == 0))) {
+            if ((year % 100 === 0)&& (!(year % 400 === 0))) {
                 answer = "Not leap year."
             } else {
                 answer = "Leap year."
