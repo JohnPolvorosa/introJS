@@ -44,4 +44,20 @@ function getMilk(money) {
   console.log("enterHouse");
 }
 
-getMilk(69);
+// getMilk(69);
+
+function lifeInWeeks(age) {
+    
+    /************Don't change the code above************/    
+       
+        //Write your code here.
+        var ageLimit = 90;
+        var ageDays = (ageLimit-age)*365
+        var ageWeeks = (ageLimit-age)*52;
+        var ageMonths = (ageLimit-age)*12;
+        
+        console.log("You have " + ageDays + " days, " + ageWeeks + " weeks, and " + ageMonths + " months left."); 
+    /*************Don't change the code below**********/
+    }
+    
+    // lifeInWeeks(22);
