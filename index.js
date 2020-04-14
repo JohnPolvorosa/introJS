@@ -31,8 +31,10 @@ function getMilk(money) {
   console.log("moveUp");
   console.log("moveRight");
   console.log("moveRight");
+
   console.log("bucket of milk costs: " + bucketCost);
-  console.log("bought " + Math.floor(money/bucketCost) + " buckets of milk");
+  console.log("bought " + calcBottles(money, bucketCost) + " buckets of milk");
+
   console.log("moveLeft");
   console.log("moveLeft");
   console.log("moveDown");
@@ -42,22 +44,31 @@ function getMilk(money) {
   console.log("moveLeft");
   console.log("moveLeft");
   console.log("enterHouse");
+
+  return calcChange(money, bucketCost);
 }
 
-// getMilk(69);
+
+function calcBottles(startingMoney, costPerBottle) {
+    var numBottles = Math.floor(startingMoney / costPerBottle);
+    return numBottles;
+}
+
+function calcChange(startingMoney, costPerBottle) {
+    var change = (startingMoney %  costPerBottle);
+    return change;
+}
+
+console.log("Hello sir, here is your " + getMilk(69) + " change");
+
 
 function lifeInWeeks(age) {
-    
-    /************Don't change the code above************/    
-       
-        //Write your code here.
         var ageLimit = 90;
         var ageDays = (ageLimit-age)*365
         var ageWeeks = (ageLimit-age)*52;
         var ageMonths = (ageLimit-age)*12;
-        
+     
         console.log("You have " + ageDays + " days, " + ageWeeks + " weeks, and " + ageMonths + " months left."); 
-    /*************Don't change the code below**********/
     }
     
     // lifeInWeeks(22);
