@@ -8,6 +8,10 @@
 
 // // alert(name.slice(3,6));
 
-var input = prompt("What is your name?");
-var input1 = input.slice(0,1);
-alert("Hello " + input1.toUpperCase() + (input.slice(1,input.length)).toLowerCase());
+// var input = prompt("What is your name?");
+// var input1 = input.slice(0,1);
+// alert("Hello " + input1.toUpperCase() + (input.slice(1,input.length)).toLowerCase());
+
+var dogAge = prompt("Enter your Dog Age: ");
+var humanAge = (dogAge-2)*4 + 21;
+alert("Your dog is " + humanAge + " in human age");
